@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Activity</title>
+        <link rel="stylesheet" href="style/main.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Groofern Growth Tracker</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="add.html">Add Activity</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="progress.html">Progress</a></li>
+                    <li><a href="goals.html">Goals</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="add-activity">
+                <h2>Add Your Activity</h2>
+                <form id="activity-form">
+                    <label for="activity">Activity:</label>
+                    <input type="text" name="activity" id="activity" placeholder="What did you do today?" required>
+                    <label for="date">Date:</label>
+                    <input type="date" name="date" id="date" required>
+                    <label for="notes">Notes:</label>
+                    <textarea name="notes" id="notes" placeholder="Any comments?" rows="4"></textarea>
+                    <button type="submit">Save Activity</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Groofern Growth Tracker | All rights reserved</p>
+        </footer>
+
+        <script src="scripts/activity.js"></script>
+    </body>
+</html>

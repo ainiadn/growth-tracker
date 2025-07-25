@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Progress Tracker</title>
+        <link rel="stylesheet" href="style/main.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Groofern Growth Tracker</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="add.html">Add Activity</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="progress.html">Progress</a></li>
+                    <li><a href="goals.html">Goals</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="progress">
+                <h2>Your Progress</h2>
+
+                <!-- Add Chart.js progress chart -->
+                <canvas id="progressChart" width="400" height="200">
+                    Your browser does not support the canvas element.
+                </canvas>
+
+                <div id="activities-list"></div>
+                <div id="goals-list"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Groofern Growth Tracker | All rights reserved</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+        <script src="scripts/progress.js" defer></script>
+        
+    </body>
+</html>
